@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title> Login Veterinaria </title>
+        <link rel="stylesheet" href="Estilos/Login.css">
+    </head>
+
+    <body>
+        <div class="hero"> 
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="Login()">Log in</button>
+                    <button type="button" class="toggle-btn" onclick="Sign()">Sign up</button>
+                </div>
+
+                <form action="login.php" method="$GET" id="Login" class="input-group">
+                    <input type="text" name= "usu" class="input-field" placeholder="User Id" required>
+                    <input type="password" name= "con" class="input-field" placeholder="Enter Password" required> <br>
+                    <!-- <input type="checkbox" class="check-box"><span>Remember Password</span> -->
+                    <br><button type="submit" class="submit-btn">Log in</button>
+                </form>
+
+                <form action="sign.php" method="$GET" id="Sign" class="input-group">
+                    <input type="text" name= "usuario" class="input-field" placeholder="User Id" required>
+                    <input type="email" name= "email" class="input-field" placeholder="Email Id" required>
+                    <input type="text" name= "contra" class="input-field" placeholder="Enter Password" required> <br>
+                    <!-- <input type="checkbox" class="check-box"><span>Acepto los terminos</span>  -->
+                    <br><button type="submit" href="login.html" class="submit-btn">Sign up</button>
+                </form>
+
+            </div>
+            <a href=""></a>
+            <a href="http://" target="_blank"></a>
+                   
+        </div>
+
+        <script>
+            var x=document.getElementById("Login");
+            var y=document.getElementById("Sign");
+            var z=document.getElementById("btn");
+
+            function Sign(){
+                x.style.left="-400px";
+                y.style.left="62px";
+                z.style.left="110px";
+            }
+
+            function Login(){
+                x.style.left="62px";
+                y.style.left="470px";
+                z.style.left="6";
+            }
+
+        </script>
+
+    </body>
+</html>
